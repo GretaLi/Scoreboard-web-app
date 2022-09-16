@@ -1,0 +1,180 @@
+@font-face {
+  font-family:"cursed-timer";
+  src: url("CursedTimerUlil-Aznm.ttf") format("truetype");
+}
+
+:root{
+    --clr-primary: 36, 33%, 78%;
+    --clr-secondary:22, 78%, 26%;
+    --clr-accent:154, 17%, 51%;
+    --clr-bg: 0, 0%, 13%;
+    --clr-white: 0, 0%, 96%;
+    
+    --fs-300: 1.125rem;
+    --fs-400: 1.25rem;
+    --fs-500: 2.5rem;
+    --fs-600: 5.625rem;
+    
+    --ff-timer:cursed-timer;
+    
+    --border-radius: 3px;
+}
+
+body, h1, h2, h3, h4, p, select, option {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+body{
+    background: hsl(var(--clr-bg));
+    color: hsl(var(--clr-white));
+    font-size: var(--fs-300);
+}
+
+button{
+    display: inline-block;
+    border: none;
+    border-radius: var(--border-radius);
+    background: transparent;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+button:hover{
+    transition: 0.3s all ease;
+}
+
+.container {
+    display: flex; 
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 30rem;
+    min-width: 25rem;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center
+}
+
+.scoreboard-time{
+    padding: 0.5rem 0;
+    border: 3px solid;
+    border-radius: var(--border-radius);
+}
+
+.scoreboard-time h3{
+    font-size: var(--fs-300);
+    letter-spacing: 0.25rem;
+}
+
+.scoreboard-time p{
+    font-size: var(--fs-500);
+    font-family: var(--ff-timer);
+}
+
+.scoreboard-score{
+    display: flex; 
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+
+.scoreboard-score h3{
+    font-size: var(--fs-500);
+    letter-spacing: 0.5rem; 
+}
+
+.scoreboard-score p{
+    margin: 1rem 0;
+    padding-top: 1rem;
+    background-color: hsl(var(--clr-primary));
+    color: hsl(var(--clr-secondary));
+    border-radius: var(--border-radius);
+    font-size: var(--fs-600);
+    font-family: var(--ff-timer);
+}
+
+.scoreboard-score button{
+    padding: 0.75rem 0.5rem 0.5rem;
+    color: hsl(var(--clr-primary));
+    border: 1px solid hsl(var(--clr-primary));
+    font-family: var(--ff-timer);
+}
+
+.scoreboard-score button:hover{
+    background: hsl(var(--clr-primary));
+    color: hsl(var(--clr-bg));
+}
+
+.scoreboard-btn button{
+    display: block;
+    width: 50%;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    font-size: var(--fs-400);
+    color: hsl(var(--clr-white));
+}
+
+.scoreboard-btn button:hover{
+    opacity: 0.6;
+}
+
+#new-btn{
+    border: 3px solid;
+} 
+#save-btn{
+    background-color: hsl(var(--clr-accent));
+}
+
+#progress-bar{
+    background: indianred;
+    height: 0.5rem;
+}
+
+#score-el{
+    margin: 0 auto;
+}
+
+.setting{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0.5rem;
+    color: hsl(var(--clr-primary));
+    border-radius: var(--border-radius);
+}
+
+.setting p {
+    padding-bottom: 0.5rem;
+}
+
+.setting select {
+    background: transparent;
+    color: hsl(var(--clr-primary));
+}
+
+.setting option{
+    padding: 0.5rem;
+    text-align: center;
+    color: hsl(var(--clr-secondary));
+}
+
+.setting button{
+    color: hsl(var(--clr-primary));
+}
+
+.fa-gear{
+    display: none;
+    font-size: var(--fs-400)
+}
+
+.setting-board button{
+    border: 1px solid; 
+}
+
+.setting-board{
+    display: none;
+}
+
+.active{
+    display: block;
+}
