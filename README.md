@@ -4,7 +4,7 @@ Hello everyone 👋🏼,
 
 This is my solo project for Basketball Scoreboard.
 
-I created my own version and designed this scoreboard for games that we can use with our friends and family.
+I created my own version and designed this scoreboard for every kind of game so that we can use it with our friends and family.
 
 Check out my code scrim Scoreboard - [https://scrimba.com/scrim/co3e0457ea15acde13ed02994](https://scrimba.com/scrim/co3e0457ea15acde13ed02994)
 
